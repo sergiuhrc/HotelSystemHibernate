@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLDocumentController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="130.0" text="Made By Sergiu Hîrcîială" textAlignment="RIGHT" textFill="#00000092" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="David" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <VBox prefHeight="549.0" prefWidth="148.0" style="-fx-background-color: #008BFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="224.0" prefWidth="148.0" style="-fx-background-color: #0E92FF;" VBox.vgrow="NEVER">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="115.0" fitWidth="115.0" layoutX="15.0" layoutY="15.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/aaa.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </ImageView>
+                  <Label layoutX="15.0" layoutY="139.0" prefHeight="17.0" prefWidth="129.0" text="Name:" />
+                  <Label layoutX="14.0" layoutY="160.0" prefHeight="17.0" prefWidth="130.0" text="Surrname:" />
+                  <JFXButton layoutX="13.0" layoutY="185.0" prefHeight="25.0" prefWidth="120.0" ripplerFill="WHITE" style="-fx-border-color: #FF4100; -fx-border-width: 1; -fx-background-color: #FF602A;" text="Log Out">
+                     <font>
+                        <Font name="Gulim" size="12.0" />
+                     </font></JFXButton>
+               </children>
+            </Pane>
+            <JFXButton maxWidth="250.0" minWidth="148.0" onAction="#backHome" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff99" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Home" textAlignment="CENTER">
+               <VBox.margin>
+                 
+               </VBox.margin>
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton maxWidth="250.0" minWidth="148.0" onAction="#addRooms" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="ADD Roms">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton maxWidth="250.0" minWidth="148.0" onAction="#bookingButtonAction" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Booking">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton maxWidth="250.0" minHeight="50.0" minWidth="148.0" onAction="#checkInButtonAction" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Check-In">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton maxWidth="250.0" minWidth="148.0" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Check-Out">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton maxWidth="250.0" minWidth="148.0" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Update/Delete">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton maxWidth="250.0" minWidth="148.0" onAction="#chartButtonAction" prefHeight="50.0" prefWidth="148.0" ripplerFill="#00d8ff" style="-fx-border-color: #00d8ff; -fx-background-color: #38A3FC;" text="Chart">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font></JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="centerHBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="546.0" minWidth="822.0" prefHeight="546.0" prefWidth="666.0" style="-fx-background-color: #66D7FD;" StackPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" style="" text="Wellcome Home" textAlignment="CENTER">
+                     <font>
+                        <Font name="Garamond" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </StackPane>
+   </center>
+   <right>
+      <AnchorPane maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

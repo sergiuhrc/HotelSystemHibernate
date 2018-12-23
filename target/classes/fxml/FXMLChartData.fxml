@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="473.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLChartDataController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="813.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Charts" textAlignment="CENTER">
+               <font>
+                  <Font name="Angsana New Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="217.0" prefWidth="813.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <PieChart prefHeight="231.0" prefWidth="271.0" VBox.vgrow="SOMETIMES" />
+                        <JFXToggleButton text="Show Chart" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="435.0" prefWidth="318.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="c1" fill="#ffffff00" radius="135.0" stroke="#77c2bb" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 50;">
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Circle>
+                              <Circle fx:id="c2" fill="#1f93ff00" radius="124.0" stroke="#009688" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-stroke-dash-array: 20;">
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Circle>
+                              <Circle fx:id="c3" fill="#21ff9baa" radius="100.0" stroke="#00d0ff" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 23;">
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Circle>
+                              <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefHeight="93.0" prefWidth="121.0" text="1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold Italic" size="46.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <JFXToggleButton text="Show Chart" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <PieChart VBox.vgrow="SOMETIMES" />
+                        <JFXToggleButton text="Show Chart" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

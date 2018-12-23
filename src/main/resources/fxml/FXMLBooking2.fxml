@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="641.0" prefWidth="1052.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLBookingController">
+   <left>
+          <VBox prefHeight="641.0" prefWidth="256.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="256.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="177.0" text="Coustumer Info" textFill="#4b39ce" underline="true">
+                           <font>
+                              <Font name="Angsana New Bold Italic" size="35.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="nameTextField" focusColor="#18e409" promptText="Name" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
+                     <VBox.margin>
+                      
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="surrnameTextField" focusColor="#18e409" promptText="Surrname" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
+                     <VBox.margin>
+                      
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailTextField" focusColor="#18e409" promptText="Email" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
+                     <VBox.margin>
+                       
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="identityTextField" focusColor="#18e409" promptText="Identity NO" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
+                     <VBox.margin>
+                     
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="cityTextField" alignment="CENTER" focusColor="#18e409" promptText="City" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="#0a0a0a">
+                     <VBox.margin>
+                       
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="adressTextField" focusColor="#18e409" promptText="Address" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
+                     <VBox.margin>
+                       
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="256.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="177.0" text="Booking" textFill="#4b39ce" underline="true">
+                           <font>
+                              <Font name="Angsana New Bold Italic" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="Check-in">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="14.0" right="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="start_datePicker" editable="false" promptText="Check-in Date">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="Check-out">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="14.0" right="9.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="end_datePiker" editable="false" promptText="Check-out Date">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="293.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="122.0" text="Adults">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </Label>
+                        <JFXTextField fx:id="adultsTextField" alignment="CENTER" editable="false" focusColor="#18e409" maxWidth="664.0" minWidth="41.0" prefHeight="51.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" text="1" unFocusColor="BLACK">
+                           <HBox.margin>
+                            
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="293.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="120.0" text="Childrens">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </Label>
+                        <JFXTextField fx:id="childrensTextField" focusColor="#18e409" maxWidth="199.0" minWidth="159.0" prefHeight="31.0" prefWidth="161.0" unFocusColor="BLACK">
+                           <HBox.margin>
+                            
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="334.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="134.0" text="Separated Rooms">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="14.0" right="5.0" />
+                           </padding>
+                        </Label>
+                        <JFXComboBox fx:id="separated_roomComboBox" prefHeight="25.0" prefWidth="149.0">
+                           <padding>
+                              <Insets left="-5.0" right="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="316.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="102.0" text="    Selected Room" textAlignment="CENTER">
+                           <font>
+                              <Font name="Angsana New Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label ellipsisString="" prefHeight="17.0" prefWidth="30.0" text="                     " />
+                        <Label fx:id="room_number_Label" prefHeight="31.0" prefWidth="101.0" style="-fx-border-color: red; -fx-border-width: 1;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="25.0" />
+                     </opaqueInsets>
+                  </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="316.0">
+               <children>
+                  <JFXButton fx:id="priceButton" buttonType="RAISED" onAction="#calculatePriceButton" prefHeight="28.0" prefWidth="102.0" ripplerFill="#88ff00" style="-fx-background-color: #4b39ce;" text="Calculate Price" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        
+                     </HBox.margin>
+                  </JFXButton>
+                  <Label fx:id="room_price_Label" prefHeight="31.0" prefWidth="127.0" style="-fx-border-color: red; -fx-border-width: 1;">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="25.0" />
+               </opaqueInsets>
+            </HBox>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="489.0">
+                     <children>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#makeRezervation" prefHeight="30.0" prefWidth="168.0" ripplerFill="#db0f0f" style="-fx-background-color: orange;" text="Rezervate" textAlignment="CENTER">
+                           <font>
+                              <Font name="Angsana New" size="28.0" />
+                           </font>
+                           <cursor>
+                       
+                     </cursor>
+                           <HBox.margin>
+                           
+                           </HBox.margin>
+                        </JFXButton>
+                        
+                     </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="5.0" />
+               </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+         <BorderPane.margin>
+            <Insets left="25.0" />
+         </BorderPane.margin>
+            </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_RIGHT" prefHeight="663.0" prefWidth="771.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="660.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Available rooms" textAlignment="CENTER" textFill="#4b39ce">
+                           <font>
+                              <Font name="Angsana New Bold Italic" size="40.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tabel" prefHeight="546.0" prefWidth="830.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="id_tab" maxWidth="100.0" minWidth="25.0" prefWidth="25.0" text="ID" />
+                        <TableColumn fx:id="door_nr_tab" maxWidth="100.0" minWidth="60.0" prefWidth="60.0" text="Door" />
+                        <TableColumn fx:id="beds_tab" maxWidth="100.0" minWidth="55.0" prefWidth="60.0" text="Beds" />
+                        <TableColumn fx:id="baths_tab" maxWidth="100.0" minWidth="60.0" prefWidth="60.0" text="Baths" />
+                        <TableColumn fx:id="living_room_tab" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Separated" />
+                        <TableColumn fx:id="max_adults_tab" maxWidth="100.0" minWidth="90.0" prefWidth="100.0" text="MaxAdults" />
+                        <TableColumn fx:id="max_childrens_tab" maxWidth="100.0" minWidth="90.0" prefWidth="100.0" text="MaxChildrens" />
+                        <TableColumn fx:id="price_tab" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="PricePerNight" />
+                        <TableColumn fx:id="available_tab" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Available" />
+                     </columns>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+   </center>
+   <top>
+     
+   </top>
+   <right>
+     
+   </right>
+</BorderPane>

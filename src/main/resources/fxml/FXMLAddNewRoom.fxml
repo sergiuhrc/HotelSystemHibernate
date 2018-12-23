@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="602.0" prefWidth="1149.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLAddNewRoomController">
+   <left>
+      <VBox prefHeight="511.0" prefWidth="241.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Room Type">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="room_type_ComboBox" prefHeight="25.0" prefWidth="167.0" />
+            <Label prefWidth="130.0" text="Door Nr">
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="doorTextField" maxWidth="163.0" minWidth="113.0" prefHeight="23.0" prefWidth="142.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+               
+               </VBox.margin>
+            </JFXTextField>
+            <Label prefWidth="130.0" text="Beds">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="bedsComboBox" prefHeight="25.0" prefWidth="166.0">
+               <VBox.margin>
+        
+               </VBox.margin>
+            </JFXComboBox>
+            <Label prefWidth="130.0" text="Baths">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="bathComboBox" prefWidth="150.0">
+               <VBox.margin>
+                
+               </VBox.margin>
+            </JFXComboBox>
+            <Label prefWidth="130.0" text="Separated Rooms">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="separated_rooms_CheckBox">
+               <VBox.margin>
+             
+               </VBox.margin></JFXCheckBox>
+            <Label prefWidth="130.0" text="Max Adults">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="maxAdults_ComboBox" prefWidth="150.0">
+               <VBox.margin>
+                
+               </VBox.margin>
+            </JFXComboBox>
+            <Label prefWidth="130.0" text="Max Childrens">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="maxchildrens_ComboBox" prefWidth="150.0">
+               <VBox.margin>
+                  
+               </VBox.margin>
+            </JFXComboBox>
+            <Label prefWidth="130.0" text="Price">
+               <padding>
+                  <Insets left="10.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="priceTextField" maxWidth="179.0" minWidth="141.0" prefHeight="23.0" prefWidth="141.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                 
+               </VBox.margin>
+            </JFXTextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton contentDisplay="CENTER" onAction="#addNewRoom" prefWidth="70.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="OK" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                     <HBox.margin>
+                       
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Label text="      " />
+                  <JFXButton contentDisplay="CENTER" onAction="#cancelAddNewRoom" prefHeight="41.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+                     <HBox.margin>
+                    
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <TableView fx:id="tabel" prefHeight="520.0" prefWidth="848.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id_tab" maxWidth="100.0" minWidth="25.0" prefWidth="37.0" text="ID" visible="false" />
+            <TableColumn fx:id="room_type_tab" maxWidth="138.0" minWidth="25.0" prefWidth="138.0" text="Room Type" />
+          <TableColumn fx:id="door_nr_tab" maxWidth="100.0" minWidth="0.0" prefWidth="63.0" text="Door" />
+            <TableColumn fx:id="beds_tab" maxWidth="103.0" minWidth="0.0" prefWidth="51.0" text="Beds" />
+            <TableColumn fx:id="baths_tab" maxWidth="112.0" minWidth="0.0" prefWidth="74.0" text="Baths" />
+            <TableColumn fx:id="living_room_tab" maxWidth="158.0" minWidth="0.0" prefWidth="85.0" text="Separated" />
+            <TableColumn fx:id="max_adults_tab" maxWidth="155.0" minWidth="0.0" prefWidth="105.0" text="MaxAdults" />
+            <TableColumn fx:id="max_childrens_tab" maxWidth="250.0" minWidth="0.0" prefWidth="87.0" text="MaxChildrens" />
+            <TableColumn fx:id="price_tab" maxWidth="261.0" minWidth="0.0" prefWidth="100.0" text="PricePerNight" />
+            <TableColumn fx:id="available_tab" maxWidth="204.0" minWidth="0.0" prefWidth="94.0" text="Available" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="35.0" right="10.0" />
+         </BorderPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Add New Rooms">
+               <font>
+                  <Font name="Garamond" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="566.0" prefWidth="48.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" onAction="#showAllRooms" prefHeight="49.0" prefWidth="109.0" style="-fx-background-color: #00B65A;" textFill="TRANSPARENT">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/book-open-outline-filled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

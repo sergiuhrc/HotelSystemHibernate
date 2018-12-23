@@ -1,0 +1,9 @@
+
+~squid:S4165%"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ
+ysquid:S4165"bRemove this useless assignment; "door" already holds the assigned value along all execution paths.(Ò‹ñÒ
+zsquid:S4165M"cRemove this useless assignment; "price" already holds the assigned value along all execution paths.(£»®æ
+„squid:S41655"hRemove this useless assignment; "identityNo" already holds the assigned value along all execution paths.(Í¸Ğõÿÿÿÿÿ
+‚squid:S4165-"fRemove this useless assignment; "surrname" already holds the assigned value along all execution paths.(Îú×Çüÿÿÿÿ
+squid:S4165="eRemove this useless assignment; "checkIn" already holds the assigned value along all execution paths.(Ş”“‘øÿÿÿÿ
+}squid:S4165E"fRemove this useless assignment; "checkOut" already holds the assigned value along all execution paths.(ŸÇî
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ôî·ùÿÿÿÿ

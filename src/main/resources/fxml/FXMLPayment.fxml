@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="272.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLPaymentController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="272.0" style="-fx-background-color: #EEF2F4;">
+         <children>
+            <Label text="Pay Invoice" textFill="#63757f">
+               <font>
+                  <Font name="Cambria" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="272.0">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/creditcard.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="272.0">
+         <children>
+            <Label text="Payment amount" textFill="#49575e">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="58.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="148.0">
+               <children>
+                  <Label prefHeight="57.0" prefWidth="132.0" text="\$500.00">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Cambria Math" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="73.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="61.0" prefWidth="257.0">
+               <children>
+                  <Label text="Name on card" textFill="#49575e">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField maxWidth="247.0" minWidth="237.0" prefHeight="31.0" prefWidth="247.0" promptText="Hirciiala Serghei" />
+               </children>
+               <opaqueInsets>
+                  <Insets left="15.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="73.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="61.0" prefWidth="257.0">
+               <children>
+                  <Label text="Card number" textFill="#49575e">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField maxWidth="247.0" minWidth="237.0" prefHeight="31.0" prefWidth="247.0" promptText="1234 5678 9012 3456" />
+               </children>
+               <opaqueInsets>
+                  <Insets left="15.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="75.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="257.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="257.0">
+                     <children>
+                        <VBox prefHeight="29.0" prefWidth="104.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="102.0" text="Expiry date" textFill="#49575e">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_RIGHT" prefHeight="29.0" prefWidth="122.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="132.0" text="Security code" textFill="#49575e">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="44.0" prefWidth="257.0">
+                     <children>
+                        <VBox prefHeight="44.0" prefWidth="116.0">
+                           <children>
+                              <JFXTextField promptText="MM/YY" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="44.0" prefWidth="146.0">
+                           <children>
+                              <JFXTextField maxWidth="126.0" minWidth="126.0" prefHeight="31.0" prefWidth="126.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets left="15.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXButton contentDisplay="CENTER" prefHeight="41.0" prefWidth="232.0" style="-fx-background-color: #54C7C3;" text="Pay" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

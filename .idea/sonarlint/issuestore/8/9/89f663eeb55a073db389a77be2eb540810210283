@@ -1,0 +1,29 @@
+
+‡squid:S4165""kRemove this useless assignment; "id_appartment" already holds the assigned value along all execution paths.(™ï¹µøÿÿÿÿ
+ƒsquid:S4165*"gRemove this useless assignment; "room_type" already holds the assigned value along all execution paths.(¼š¼¼øÿÿÿÿ
+squid:S4165Z"kRemove this useless assignment; "max_childrens" already holds the assigned value along all execution paths.(ã…Å0
+xsquid:S4165:"bRemove this useless assignment; "beds" already holds the assigned value along all execution paths.(“¥ÿ&
+~squid:S4165R"hRemove this useless assignment; "max_adults" already holds the assigned value along all execution paths.(€´çW
+zsquid:S4165b"cRemove this useless assignment; "price" already holds the assigned value along all execution paths.(£»®æ
+ˆsquid:S4165J"lRemove this useless assignment; "separated_room" already holds the assigned value along all execution paths.(™–Şÿÿÿÿÿ
+|squid:S41652"eRemove this useless assignment; "door_nr" already holds the assigned value along all execution paths.(·¥¿û
+~squid:S4165B"bRemove this useless assignment; "bath" already holds the assigned value along all execution paths.(¨Û¿Éıÿÿÿÿ
+~squid:S4165j"gRemove this useless assignment; "available" already holds the assigned value along all execution paths.(€Ñ÷¯
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ•Ã¬
+ksquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š¾’‰øÿÿÿÿ
+fsquid:S00100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÆÄÀ
+ksquid:S00100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼˜†úÿÿÿÿ
+ksquid:S00100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êĞ¢·ıÿÿÿÿ
+ksquid:S001001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ååÄûÿÿÿÿ
+fsquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‘Ú
+ksquid:S00100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å†Å¨üÿÿÿÿ
+fsquid:S00100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºß¿
+fsquid:S00100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ÕÒ·
+fsquid:S00100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ğÌû
+ksquid:S00100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÍ¹Èüÿÿÿÿ
+psquid:S00116"XRename this field "id_appartment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™çµà
+lsquid:S00116"TRename this field "room_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ÃÌ”
+osquid:S00116"RRename this field "door_nr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÆ¸›ıÿÿÿÿ
+qsquid:S00116"YRename this field "separated_room" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğˆ‚Æ
+rsquid:S00116"URename this field "max_adults" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«‘¤œøÿÿÿÿ
+psquid:S00116"XRename this field "max_childrens" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÈÙŸ

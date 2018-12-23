@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLCheckInController">
+   <left>
+      <VBox alignment="CENTER" fillWidth="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" style="-fx-background-color: white; -fx-border-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="74.0" prefWidth="163.0" text="Search">
+               <font>
+                  <Font name="Cambria" size="51.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="searchField" alignment="CENTER" cacheHint="SPEED" focusColor="#30bf9e" labelFloat="true" maxWidth="268.0" minWidth="268.0" prefHeight="50.0" prefWidth="268.0" promptText="         First Name">
+               <font>
+                  <Font name="Forte" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="50.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField alignment="CENTER" cacheHint="SPEED" focusColor="#30bf9e" labelFloat="true" maxWidth="268.0" minWidth="268.0" prefHeight="50.0" prefWidth="268.0" promptText="        Last Name">
+               <font>
+                  <Font name="Forte" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton contentDisplay="CENTER" onAction="#searchCoustumer" prefHeight="49.0" prefWidth="148.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="OK" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vbox" prefWidth="514.0" style="-fx-background-color: white;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: #0c9eff;" text="Check-IN" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Forte" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="tabel" editable="true" prefHeight="200.0" prefWidth="524.0" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="doorTab" prefWidth="33.0" text="Door" />
+                <TableColumn fx:id="nameTab" prefWidth="117.0" text="Name" />
+                  <TableColumn fx:id="surrnameTab" prefWidth="75.0" text="Surrname" />
+                  <TableColumn fx:id="identityTab" prefWidth="75.0" text="Identity NO" />
+                  <TableColumn fx:id="checkInTab" prefWidth="75.0" text="Check-In" />
+                  <TableColumn fx:id="checkOutTab" prefWidth="75.0" text="Check-out" />
+                  <TableColumn fx:id="priceTab" prefWidth="53.0" text="Price" />
+              </columns>
+               <VBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </VBox.margin>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <JFXTextField alignment="CENTER" cacheHint="SPEED" editable="false" focusColor="#30bf9e" labelFloat="true" maxWidth="268.0" minWidth="154.0" prefHeight="51.0" prefWidth="180.0" promptText="First Name" style="-fx-prompt-text-fill: red;" text=" " unFocusColor="BLACK">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <JFXTextField alignment="CENTER" cacheHint="SPEED" editable="false" focusColor="#30bf9e" labelFloat="true" maxWidth="268.0" minWidth="158.0" prefHeight="50.0" prefWidth="158.0" promptText="Last Name" style="-fx-prompt-text-fill: red;" text=" ">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <JFXTextField alignment="CENTER" cacheHint="SPEED" editable="false" focusColor="#30bf9e" labelFloat="true" maxWidth="268.0" minWidth="202.0" prefHeight="50.0" prefWidth="202.0" promptText="Identity NO" style="-fx-prompt-text-fill: red;" text=" ">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: #0c9eff;" text="Meal" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Forte" size="30.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox prefHeight="60.0" prefWidth="640.0">
+               <children>
+                  <JFXRadioButton prefHeight="17.0" prefWidth="135.0" selected="true" text="EP">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="MealGroup" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton prefHeight="17.0" prefWidth="116.0" text="Ap" toggleGroup="$MealGroup" />
+                  <JFXRadioButton prefHeight="17.0" prefWidth="149.0" text="MAP" toggleGroup="$MealGroup" />
+                  <JFXRadioButton prefHeight="17.0" prefWidth="161.0" text="CP" toggleGroup="$MealGroup" />
+                  <JFXButton ellipsisString="" onAction="#showInfoAboutMealPlans" prefHeight="20.0" prefWidth="37.0" ripplerFill="#315ebd">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/info.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="51.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="514.0">
+               <children>
+                  <JFXButton contentDisplay="CENTER" prefHeight="42.0" prefWidth="172.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Calculate Price" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="18.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="Price" prefHeight="42.0" prefWidth="358.0" text="Price here" textAlignment="CENTER">
+                     <font>
+                        <Font name="Forte" size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children></HBox>
+            <HBox alignment="BASELINE_CENTER" prefHeight="64.0" prefWidth="640.0" style="-fx-background-color: #0c9eff;" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="61.0" prefWidth="190.0">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#goToPaymentForm" prefHeight="47.0" prefWidth="190.0" ripplerFill="#37d713" style="-fx-background-color: #FFD700;" text="Payment" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Cambria" size="27.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children></HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
