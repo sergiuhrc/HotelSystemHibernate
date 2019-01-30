@@ -1,34 +1,34 @@
 
-psquid:S00116+"QRename this field "id_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó­ı8ÓñÌßı,
-wsquid:S001161"SRename this field "beds_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹˜Û˜øÿÿÿÿ8ÓñÌßı,
-rsquid:S1450Æ"SRemove the "data" field and declare it as a local variable in the relevant methods.(…äş8å†êßı,
-Gsquid:S1148§"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­¸şàı,
-„squid:S00116P"`Rename this field "maxchildrens_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚŠÜñÿÿÿÿÿ8ÓñÌßı,
-{squid:S00116R"]Rename this field "room_type_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÏ08ÓñÌßı,
-Fsquid:S1148b"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å†êßı,
-{squid:S001169"\Rename this field "max_childrens_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ø®á8ÓñÌßı,
-xsquid:S00116="TRename this field "price_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îóÀ¥øÿÿÿÿ8ÓñÌßı,
-jsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(Ã‡ÔŒ8å†êßı,
-fsquid:S2095Ñ"GUse try-with-resources or close this "Statement" in a "finally" clause.(†ëÜß8…¥„áı,
-_squid:S2259ç"@A "NullPointerException" could be thrown; "rs" is nullable here.(ÅÌ”Ù8…¥„áı,
-zsquid:S00116/"VRename this field "door_nr_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ±›üÿÿÿÿ8ÓñÌßı,
-xsquid:S001163"TRename this field "baths_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ…İ–ıÿÿÿÿ8ÓñÌßı,
-~squid:S001165"ZRename this field "living_room_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ×±íùÿÿÿÿ8ÓñÌßı,
-wsquid:S00116;"XRename this field "bathrooms_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†’»š8ÓñÌßı,
-|squid:S00116J"]Rename this field "maxAdults_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€šƒˆ8ÓñÌßı,
-vsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÙ‚—şÿÿÿÿ8å†êßı,
-\
-squid:S106–"9Replace this use of System.out or System.err by a logger.(‡Ãî“üÿÿÿÿ8å†êßı,
-[
-squid:S106i"9Replace this use of System.out or System.err by a logger.(ğŒ‰–şÿÿÿÿ8å†êßı,
-psquid:S00117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø,8å†êßı,
-_squid:S2259¥"AA "NullPointerException" could be thrown; "pst" is nullable here.(ß¿£8­¸şàı,
-Gsquid:S1148ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ…áı,
-W
-squid:S106 "9Replace this use of System.out or System.err by a logger.(òÎ‡ß8å†êßı,
-V
-squid:S106®"9Replace this use of System.out or System.err by a logger.(Õ¢ï8å†êßı,
-‚squid:S00116U"cRename this field "separated_rooms_CheckBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆí¤Š8ÓñÌßı,
-|squid:S00116?"XRename this field "available_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¢—íÿÿÿÿÿ8ÓñÌßı,
-|squid:S00116-"XRename this field "room_type_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ§ƒïúÿÿÿÿ8ÓñÌßı,
-}squid:S001167"YRename this field "max_adults_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç êÒüÿÿÿÿ8ÓñÌßı,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğŒ‰–şÿÿÿÿ8å†êßı,
+\squid:S2259"@A "NullPointerException" could be thrown; "rs" is nullable here.(ÅÌ”Ù8…¥„áı,
+zsquid:S00116"]Rename this field "maxAdults_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€šƒˆ8ÓñÌßı,
+csquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(†ëÜß8…¥„áı,
+zsquid:S00116"XRename this field "room_type_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ§ƒïúÿÿÿÿ8ÓñÌßı,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õ…áı,
+ysquid:S00116"]Rename this field "room_type_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÏ08ÓñÌßı,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(‡Ãî“üÿÿÿÿ8å†êßı,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(òÎ‡ß8å†êßı,
+vsquid:S00116"TRename this field "price_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îóÀ¥øÿÿÿÿ8ÓñÌßı,
+\squid:S2259"AA "NullPointerException" could be thrown; "pst" is nullable here.(ß¿£8­¸şàı,
+vsquid:S00116"TRename this field "baths_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ…İ–ıÿÿÿÿ8ÓñÌßı,
+{squid:S00116"YRename this field "max_adults_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç êÒüÿÿÿÿ8ÓñÌßı,
+nsquid:S00116"QRename this field "id_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó­ı8ÓñÌßı,
+ysquid:S00116"\Rename this field "max_childrens_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ø®á8ÓñÌßı,
+‚squid:S00116"`Rename this field "maxchildrens_ComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚŠÜñÿÿÿÿÿ8ÓñÌßı,
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(Õ¢ï8å†êßı,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å†êßı,
+osquid:S1450"SRemove the "data" field and declare it as a local variable in the relevant methods.(…äş8å†êßı,
+msquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø,8å†êßı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ã‡ÔŒ8å†êßı,
+zsquid:S00116"XRename this field "available_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¢—íÿÿÿÿÿ8ÓñÌßı,
+€squid:S00116"cRename this field "separated_rooms_CheckBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆí¤Š8ÓñÌßı,
+usquid:S00116"SRename this field "beds_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹˜Û˜øÿÿÿÿ8ÓñÌßı,
+usquid:S00116"XRename this field "bathrooms_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†’»š8ÓñÌßı,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÙ‚—şÿÿÿÿ8å†êßı,
+|squid:S00116"ZRename this field "living_room_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ×±íùÿÿÿÿ8ÓñÌßı,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­¸şàı,
+xsquid:S00116"VRename this field "door_nr_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ±›üÿÿÿÿ8ÓñÌßı,

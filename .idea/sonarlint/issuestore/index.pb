@@ -61,3 +61,7 @@ g
 7src/main/java/controllers/FXMLAddNewRoomController.java,a\b\abe32245bd01fb4d81c44627266556f9cafd6cdf
 d
 4src/main/java/controllers/FXMLBookingController.java,9\4\940a3030d03f88653fb2b358e2040ea24309a5ec
+W
+'src/main/java/entity/EntityCheckIn.java,d\5\d53dc412aad4d674a6676a075198008ff6e55f8e
+W
+'src/main/java/entity/EntityBooking.java,1\c\1cce133b379b75668d22a2e8a2952cc975ba5fe5

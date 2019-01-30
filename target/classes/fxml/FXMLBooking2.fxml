@@ -46,7 +46,7 @@
                      
                      </VBox.margin>
                   </JFXTextField>
-                  <JFXTextField fx:id="cityTextField" alignment="CENTER" focusColor="#18e409" promptText="City" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="#0a0a0a">
+                  <JFXTextField fx:id="cityTextField" focusColor="#18e409" promptText="City" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="#0a0a0a">
                      <VBox.margin>
                        
                      </VBox.margin>
@@ -67,7 +67,7 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT">
                      <children>
-                        <Label text="Check-in">
+                        <Label prefHeight="27.0" prefWidth="60.0" text="Check-in">
                            <font>
                               <Font name="Angsana New Bold" size="20.0" />
                            </font>
@@ -87,7 +87,7 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT">
                      <children>
-                        <Label text="Check-out">
+                        <Label prefHeight="27.0" prefWidth="66.0" text="Check-out">
                            <font>
                               <Font name="Angsana New Bold" size="20.0" />
                            </font>
@@ -118,7 +118,7 @@
                               <Insets left="14.0" />
                            </padding>
                         </Label>
-                        <JFXTextField fx:id="adultsTextField" alignment="CENTER" editable="false" focusColor="#18e409" maxWidth="664.0" minWidth="41.0" prefHeight="51.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" text="1" unFocusColor="BLACK">
+                        <JFXTextField fx:id="adultsTextField" alignment="CENTER" editable="true" focusColor="#18e409" maxWidth="664.0" minWidth="41.0" prefHeight="51.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-prompt-text-fill: red;" unFocusColor="BLACK">
                            <HBox.margin>
                             
                            </HBox.margin>

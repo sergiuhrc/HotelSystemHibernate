@@ -1,9 +1,18 @@
 
-~squid:S4165%"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ
 ysquid:S4165"bRemove this useless assignment; "door" already holds the assigned value along all execution paths.(Ò‹ñÒ
+Isquid:S1172$"+Remove this unused method parameter "name".(Ò’Š¯8´ïôØ‰-
+Fsquid:S1172L"(Remove this unused method parameter "v".(÷ß‘†8¼óˆÙ‰-
+}squid:S4165-"fRemove this useless assignment; "surrname" already holds the assigned value along all execution paths.(Èƒº´
 zsquid:S4165M"cRemove this useless assignment; "price" already holds the assigned value along all execution paths.(£»®æ
+Qsquid:S1172D".Remove this unused method parameter "endDate".(§Ãƒöøÿÿÿÿ8¶Ï†Ù‰-
+Fsquid:S1172"(Remove this unused method parameter "i".(ğ»ºö8±ğ€Ù‰-
+Msquid:S1172,"/Remove this unused method parameter "surrname".(‘ºâ÷8§÷Ø‰-
 „squid:S41655"hRemove this useless assignment; "identityNo" already holds the assigned value along all execution paths.(Í¸Ğõÿÿÿÿÿ
-‚squid:S4165-"fRemove this useless assignment; "surrname" already holds the assigned value along all execution paths.(Îú×Çüÿÿÿÿ
-squid:S4165="eRemove this useless assignment; "checkIn" already holds the assigned value along all execution paths.(Ş”“‘øÿÿÿÿ
+Fsquid:S11724"(Remove this unused method parameter "l".(‘ş±Ò8ÛºüØ‰-
 }squid:S4165E"fRemove this useless assignment; "checkOut" already holds the assigned value along all execution paths.(ŸÇî
+Rsquid:S1656%"/Remove or correct this useless self-assignment.(ÒÜœöüÿÿÿÿ8´ïôØ‰-
+~squid:S4165%"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(ÒÜœöüÿÿÿÿ
+Ssquid:S1172<"0Remove this unused method parameter "startDate".(…Š¹¼øÿÿÿÿ8ªÓ…Ù‰-
+squid:S4165="eRemove this useless assignment; "checkIn" already holds the assigned value along all execution paths.(Ş”“‘øÿÿÿÿ
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ôî·ùÿÿÿÿ
+Msquid:S1656-"/Remove or correct this useless self-assignment.(Èƒº´8§÷Ø‰-

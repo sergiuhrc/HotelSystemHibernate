@@ -5,25 +5,41 @@
  */
 package controllers;
 
+import javax.persistence.*;
+
 /**
  *
  * @author SergiuH
  */
-
-public class GetDataForBooking {
-
+@Entity
+@Table(name = "rezervation_room")
+public class EntityBookingRezervation {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
+    @Column(name = "start_date")
     private String startDate;
+    @Column(name = "end_date")
     private String endDate;
+
+    @Column(name = "name")
     private String name;
+    @Column(name = "surrname")
     private String surrname;
+    @Column(name = "email")
     private String email;
+    @Column(name = "identity_number")
     private double identityNo;
-    private String city;
-    private String address;
+
+    @Column(name = "adults")
     private int adults;
+    @Column(name = "childrens")
     private int childrens;
-    private boolean separatedRoom;
+
+    @Column(name = "door_nr")
     private int door;
+    @Column(name = "total_price")
     private double totalPrice;
 
     public double getTotalPrice() {
@@ -34,21 +50,13 @@ public class GetDataForBooking {
         this.totalPrice = totalPrice;
     }
     
-    public String getStart_date() {
-
-        return startDate;
-
-    }
+    public String getStart_date() { return startDate; }
 
     public void setStart_date(String start_date) {
         this.startDate = start_date;
     }
 
-    public String getEnd_date() {
-
-        return endDate;
-
-    }
+    public String getEnd_date() { return endDate; }
 
     public void setEnd_date(String end_date) {
         this.endDate = end_date;
@@ -86,22 +94,6 @@ public class GetDataForBooking {
         this.identityNo = identity_no;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public int getAdults() {
         return adults;
     }
@@ -116,14 +108,6 @@ public class GetDataForBooking {
 
     public void setChildrens(int childrens) {
         this.childrens = childrens;
-    }
-
-    public boolean isSeparated_room() {
-        return separatedRoom;
-    }
-
-    public void setSeparated_room(boolean separated_room) {
-        this.separatedRoom = separated_room;
     }
 
     public int getDoor() {

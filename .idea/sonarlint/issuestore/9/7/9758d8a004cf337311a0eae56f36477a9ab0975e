@@ -1,8 +1,8 @@
 
-isquid:S2077'"RUse a variable binding mechanism to construct this query instead of concatenation.(¢ÿ¹
-csquid:S2095%"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÃìÌ•üÿÿÿÿ
+O
+squid:S1061"9Replace this use of System.out or System.err by a logger.(˜åÀş
 `squid:UselessImportCheck"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ
 T
 squid:S106"9Replace this use of System.out or System.err by a logger.(ğŒ‰–şÿÿÿÿ
-O
-squid:S1061"9Replace this use of System.out or System.err by a logger.(˜åÀş
+isquid:S2077'"RUse a variable binding mechanism to construct this query instead of concatenation.(¢ÿ¹
+csquid:S2095%"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÃìÌ•üÿÿÿÿ

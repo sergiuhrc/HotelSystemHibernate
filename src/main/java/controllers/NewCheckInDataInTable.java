@@ -25,7 +25,7 @@ public class NewCheckInDataInTable {
         return door.get();
     }
 
-    public void setDoor() {
+    public void setDoor(int i) {
         this.door = door;
     }
 
@@ -33,23 +33,23 @@ public class NewCheckInDataInTable {
         return name.get();
     }
 
-    public void setName( ) {
-        this.name = name;
+    public void setName(String name) {
+        this.name = this.name;
     }
 
     public String getSurrname() {
         return surrname.get();
     }
 
-    public void setSurrname( ) {
-        this.surrname = surrname;
+    public void setSurrname(String surrname) {
+        this.surrname = this.surrname;
     }
 
     public String getIdentityNo() {
         return identityNo.get();
     }
 
-    public void setIdentityNo( ) {
+    public void setIdentityNo(long l) {
         this.identityNo = identityNo;
     }
 
@@ -57,7 +57,7 @@ public class NewCheckInDataInTable {
         return checkIn.get();
     }
 
-    public void setCheckIn( ) {
+    public void setCheckIn(String startDate) {
         this.checkIn = checkIn;
     }
 
@@ -65,7 +65,7 @@ public class NewCheckInDataInTable {
         return checkOut.get();
     }
 
-    public void setCheckOut( ) {
+    public void setCheckOut(String endDate) {
         this.checkOut = checkOut;
     }
 
@@ -73,7 +73,7 @@ public class NewCheckInDataInTable {
         return price.get();
     }
 
-    public void setPrice( ) {
+    public void setPrice(double v) {
         this.price = price;
     }
     

@@ -1,48 +1,39 @@
 
-wsquid:S1602–"SRemove useless curly braces around statement and then remove useless return keyword(õ®ãùÿÿÿÿ8ÒñÌßı,
-|squid:S00116:"XRename this field "available_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¢—íÿÿÿÿÿ8ÒñÌßı,
-Ksquid:S1602™",Remove useless curly braces around statement(¸€“˜8ÒñÌßı,
-nsquid:S2095½"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»ßÈÂ8ÒñÌßı,
-jsquid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(¼“§Ã8ÒñÌßı,
-jsquid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(öÑ˜é8ÒñÌßı,
-xsquid:S001168"TRename this field "price_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îóÀ¥øÿÿÿÿ8ÒñÌßı,
-qsquid:S1602¦"SRemove useless curly braces around statement and then remove useless return keyword(¤§Œ,8ÒñÌßı,
-jsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(öÑ˜é8ÒñÌßı,
-qsquid:S00117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Ôåß8ÒñÌßı,
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼ÁÔ³ûÿÿÿÿ8ÒñÌßı,
-Qsquid:S1611¦"3Remove the parentheses around the "param" parameter(¤§Œ,8ÒñÌßı,
-fsquid:S2095ß"GUse try-with-resources or close this "Statement" in a "finally" clause.(†ëÜß8åŸÀáı,
-wsquid:S001166"XRename this field "bathrooms_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†’»š8ÒñÌßı,
-fsquid:S2095ü"GUse try-with-resources or close this "Statement" in a "finally" clause.(†ëÜß8ÎÊÎáı,
-jsquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(‘ÑÆŠ8ÒñÌßı,
-rsquid:S1450ñ"SRemove the "data" field and declare it as a local variable in the relevant methods.(…äş8ÒñÌßı,
-tsquid:S1192á"PDefine a constant instead of duplicating this literal "price_per_night" 3 times.(Ò±‹µüÿÿÿÿ8ÒñÌßı,
-…squid:S00116J"aRename this field "separated_roomComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÍêÍøÿÿÿÿ8ÒñÌßı,
-Asquid:S1148j"#Use a logger to log this exception.(Ç’Çê8ÒñÌßı,
-_squid:S2259ê"@A "NullPointerException" could be thrown; "rs" is nullable here.(ÅÌ”Ù8åŸÀáı,
-xsquid:S00116."TRename this field "baths_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ…İ–ıÿÿÿÿ8ÒñÌßı,
-nsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(†Óâæüÿÿÿÿ8ÒñÌßı,
-W
-squid:S106Å"9Replace this use of System.out or System.err by a logger.(×Ç ¶8ÒñÌßı,
-{squid:S001164"\Rename this field "max_childrens_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ø®á8ÒñÌßı,
-}squid:S001162"YRename this field "max_adults_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç êÒüÿÿÿÿ8ÒñÌßı,
-jsquid:CommentedOutCodeLineË"<This block of commented-out lines of code should be removed.(ñ±™Œ8ÒñÌßı,
-wsquid:S00116,"SRename this field "beds_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹˜Û˜øÿÿÿÿ8ÒñÌßı,
-vsquid:S00117ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûµ©·ùÿÿÿÿ8ÒñÌßı,
-psquid:S00116("QRename this field "id_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó­ı8ÒñÌßı,
-_squid:S2259’"@A "NullPointerException" could be thrown; "rs" is nullable here.(ÅÌ”Ù8ÎÊÎáı,
-nsquid:S2095¾"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(³¬ƒ‚8ÒñÌßı,
-Wsquid:S1611–"3Remove the parentheses around the "param" parameter(õ®ãùÿÿÿÿ8ÒñÌßı,
+jsquid:CommentedOutCodeLineó"<This block of commented-out lines of code should be removed.(ôİô©8ÖïÂå‰-
+wsquid:S1602”"SRemove useless curly braces around statement and then remove useless return keyword(õ®ãùÿÿÿÿ8ÒñÌßı,
+jsquid:CommentedOutCodeLineÒ"<This block of commented-out lines of code should be removed.(¾¡Å×8ÛÌÊä‰-
+qsquid:S1602¤"SRemove useless curly braces around statement and then remove useless return keyword(¤§Œ,8ÒñÌßı,
+zsquid:S00116`"[Rename this field "room_price_Label" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°îÃ–8ÒñÌßı,
+wsquid:S00116B"XRename this field "available_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùé´8ÒñÌßı,
+osquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(šİÏÖûÿÿÿÿ8ÖïÂå‰-
+isquid:CommentedOutCodeLineİ"<This block of commented-out lines of code should be removed.(ƒ«K8ÛÌÊä‰-
+Wsquid:S1611”"3Remove the parentheses around the "param" parameter(õ®ãùÿÿÿÿ8ÒñÌßı,
+usquid:S001160"QRename this field "id_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È§Ò³ÿÿÿÿÿ8ÒñÌßı,
+xsquid:S001166"TRename this field "baths_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÛò©şÿÿÿÿ8ÒñÌßı,
+nsquid:S2095¼"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»ßÈÂ8“ãüêı,
+zsquid:S00116D"[Rename this field "start_datePicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ…Šß8ÒñÌßı,
+osquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÛÌÊä‰-
+|squid:S00116F"XRename this field "end_datePiker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏŸâ–ÿÿÿÿÿ8ÒñÌßı,
+nsquid:S2095½"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(³¬ƒ‚8ÖïÂå‰-
+{squid:S00116^"\Rename this field "room_number_Label" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ª¸î8ÒñÌßı,
+osquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(“Ñ´–ùÿÿÿÿ8ÖïÂå‰-
+jsquid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(Ó—î8è×‚æ‰-
+Qsquid:S1611¤"3Remove the parentheses around the "param" parameter(¤§Œ,8ÒñÌßı,
+rsquid:S1450ğ"SRemove the "data" field and declare it as a local variable in the relevant methods.(ûªÍŞ8ÖïÂå‰-
+…squid:S00116R"aRename this field "separated_roomComboBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÍêÍøÿÿÿÿ8ÒñÌßı,
+jsquid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(ŸŒ‹8ÛÌÊä‰-
+Ksquid:S1602",Remove useless curly braces around statement(¸€“˜8ÖïÂå‰-
+rsquid:S001164"SRename this field "beds_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶şá±8ÒñÌßı,
+xsquid:S00116:"YRename this field "max_adults_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†âôË8ÒñÌßı,
+xsquid:S00116@"TRename this field "price_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôâ§ıÿÿÿÿ8ÒñÌßı,
+|squid:S00116>"XRename this field "bathrooms_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñè“ÿÿÿÿÿ8ÒñÌßı,
+nsquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(¼ÁÔ³ûÿÿÿÿ8ÒñÌßı,
 \
-squid:S106¥"9Replace this use of System.out or System.err by a logger.(úÒù ùÿÿÿÿ8ÒñÌßı,
-isquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(ñ±™Œ8ÒñÌßı,
-Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÎÊÎáı,
-zsquid:S00116*"VRename this field "door_nr_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ±›üÿÿÿÿ8ÒñÌßı,
-jsquid:CommentedOutCodeLineâ"<This block of commented-out lines of code should be removed.(©ªğª8ÒñÌßı,
-~squid:S001160"ZRename this field "living_room_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ×±íùÿÿÿÿ8ÒñÌßı,
-|squid:S00116>"XRename this field "end_datePiker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏŸâ–ÿÿÿÿÿ8ÒñÌßı,
-osquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(ƒ­³†úÿÿÿÿ8ÒñÌßı,
-{squid:S00116V"\Rename this field "room_number_Label" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ª¸î8ÒñÌßı,
-osquid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(†Óâæüÿÿÿÿ8ÒñÌßı,
-zsquid:S00116X"[Rename this field "room_price_Label" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°îÃ–8ÒñÌßı,
-zsquid:S00116<"[Rename this field "start_datePicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ…Šß8ÒñÌßı,
+squid:S106£"9Replace this use of System.out or System.err by a logger.(úÒù ùÿÿÿÿ8ÒñÌßı,
+W
+squid:S106Ã"9Replace this use of System.out or System.err by a logger.(×Ç ¶8ÒñÌßı,
+ysquid:S001168"ZRename this field "living_room_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²·Ñ8ÒñÌßı,
+usquid:S001162"VRename this field "door_nr_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º´‘8ÒñÌßı,
+osquid:CommentedOutCodeLineĞ"<This block of commented-out lines of code should be removed.(ü¼¸Ïúÿÿÿÿ8ÛÌÊä‰-
+€squid:S00116<"\Rename this field "max_childrens_tab" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË°‚úÿÿÿÿ8ÒñÌßı,
+wsquid:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").( ’¬é8™Æˆä‰-

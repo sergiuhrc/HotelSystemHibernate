@@ -2,14 +2,7 @@
 package controllers;
 
 import com.jfoenix.controls.JFXTextField;
-import java.io.IOException;
-import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import entity.EntityCheckIn;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -23,8 +16,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.swing.*;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 /**
  * FXML Controller class
@@ -33,55 +35,29 @@ import javafx.stage.Stage;
  */
 public class FXMLCheckInController implements Initializable {
 
-    ConnectorDB cdb;
-    @FXML
-    private TableView<NewCheckInDataInTable> tabel = new TableView<>();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, Integer> doorTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, String> nameTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, String> surrnameTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, String> identityTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, String> checkInTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, String> checkOutTab = new TableColumn();
-    @FXML
-    private TableColumn<NewCheckInDataInTable, Double> priceTab = new TableColumn();
 
-    private VBox vbox;
-
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
     @FXML
-    private JFXTextField searchField;
-
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        try {
-            this.cdb = new ConnectorDB();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        try {
-            doorTab.setCellValueFactory(new PropertyValueFactory<>("door"));
-            nameTab.setCellValueFactory(new PropertyValueFactory<>("name"));
-            surrnameTab.setCellValueFactory(new PropertyValueFactory<>("surrname"));
-            identityTab.setCellValueFactory(new PropertyValueFactory<>("identityNo"));
-            checkInTab.setCellValueFactory(new PropertyValueFactory<>("checkIn"));
-            checkOutTab.setCellValueFactory(new PropertyValueFactory<>("checkOut"));
-            priceTab.setCellValueFactory(new PropertyValueFactory<>("price"));
-
-            buildData();
-        } catch (SQLException ex) {
-            Logger.getLogger(FXMLCheckInController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-//        search();
-searchRoom();
-    }
+    private TableView<EntityCheckIn> tabel = new TableView<>();
+    @FXML
+    private TableColumn<EntityCheckIn, Integer> doorTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, String> nameTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, String> surrnameTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, String> identityTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, String> checkInTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, String> checkOutTab = new TableColumn();
+    @FXML
+    private TableColumn<EntityCheckIn, Double> priceTab = new TableColumn();
+    @FXML
+    private JFXTextField searchFieldName;
+    @FXML
+    private JFXTextField searchFieldSurrname;
+    private ObservableList<EntityCheckIn> data = FXCollections.observableArrayList();
 
     @FXML
     void showInfoAboutMealPlans(ActionEvent event) throws IOException {
@@ -94,35 +70,34 @@ searchRoom();
         stage.show();
         stage.setTitle("INFO");
     }
-    private ObservableList<NewCheckInDataInTable> data2 = FXCollections.observableArrayList();
-    ;
-    private ObservableList<NewCheckInDataInTable> data = FXCollections.observableArrayList();
 
-    public void buildData() throws SQLException {
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+
+            doorTab.setCellValueFactory(new PropertyValueFactory<>("door"));
+            nameTab.setCellValueFactory(new PropertyValueFactory<>("name"));
+            surrnameTab.setCellValueFactory(new PropertyValueFactory<>("surrname"));
+            identityTab.setCellValueFactory(new PropertyValueFactory<>("identityNumber"));
+            checkInTab.setCellValueFactory(new PropertyValueFactory<>("startDate"));
+            checkOutTab.setCellValueFactory(new PropertyValueFactory<>("endDate"));
+            priceTab.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
+
+            buildData();
+//            searchRoom();
+    }
+
+    public void buildData() {
         data = FXCollections.observableArrayList();
+        EntityManager em = emf.createEntityManager();
+        EntityCheckIn entityCheckIn= null;
 
-        String SQL = "Select 	door_nr , name , surrname ,identity_number, start_date , end_date , total_price  FROM rezervation_room";
-
-        // cdb.isDbConnected();
-        Connection connection = cdb.connection;
-        ResultSet rs = connection.createStatement().executeQuery(SQL);
-        while (rs.next()) {
-            NewCheckInDataInTable ti = new NewCheckInDataInTable();
-            ti.door.set(rs.getInt("door_nr"));
-            // ti.door_nr.set(rs.getInt("door_nr"));
-            ti.name.set(rs.getString("name"));
-            ti.surrname.set(rs.getString("surrname"));
-            ti.identityNo.set(rs.getString("identity_number"));
-            ti.checkIn.set(rs.getString("start_date"));
-            ti.checkOut.set(rs.getString("end_date"));
-            ti.price.set(rs.getDouble("total_price"));
-            //  ti.available.set(rs.getBoolean("available"));
-
-            data.addAll(ti);
+        for (int i = 0; i <100 ; i++) {
+                entityCheckIn = em.find(EntityCheckIn.class,i);
+                if (entityCheckIn!=null){
+                    data.add(entityCheckIn);
+                }
         }
-        tabel.setItems(data);
-        rs.close();
-
+         tabel.setItems(data);
     }
 
     @FXML
@@ -139,37 +114,56 @@ searchRoom();
 
     @FXML
     void searchCoustumer(ActionEvent event) {
+         ObservableList<EntityCheckIn> data2 = FXCollections.observableArrayList();
+        System.out.println("Salutr!!!!!!!!!!!");
+        ArrayList<EntityCheckIn> list = new ArrayList<>();
+        list.addAll(tabel.getItems().stream().distinct().filter(ele -> ele.getName().equals(searchFieldName.getText()) && ele.getSurrname().equals(searchFieldSurrname.getText())).collect(Collectors.toList()));
+        EntityCheckIn setFiltered = new EntityCheckIn();
+        if (list.size()>0) {
+            for (int i = 0; i < list.size(); i++) {
+                setFiltered.setDoor(Integer.parseInt(String.valueOf(list.get(i).getDoor())));
+                setFiltered.setName(list.get(i).getName());
+                setFiltered.setSurrname(list.get(i).getSurrname());
+                setFiltered.setIdentityNumber(Long.parseLong(String.valueOf(list.get(i).getIdentityNumber())));
+                setFiltered.setStartDate(list.get(i).getStartDate());
+                setFiltered.setEndDate(list.get(i).getEndDate());
+                setFiltered.setTotalPrice(Double.parseDouble(String.valueOf(list.get(i).getTotalPrice())));
+                data2.addAll(setFiltered);
+            }
+
+            tabel.setItems(data2);
+            System.out.println(list.size());
+        }else {
+
+
+            JOptionPane.showMessageDialog(null,"We can not find this person","Error",JOptionPane.ERROR_MESSAGE);
+            buildData();
+        }
+
 
     }
 
  public void searchRoom(){
     
-     FilteredList<NewCheckInDataInTable> filteredData = new FilteredList<>(data, e -> true);
-        searchField.setOnKeyPressed(e -> {
-            searchField.textProperty().addListener((observable, oldValue, newValue) -> {
+     FilteredList<EntityCheckIn> filteredData = new FilteredList<>(data, e -> true);
+        searchFieldName.setOnKeyPressed(e -> {
+            searchFieldName.textProperty().addListener((observable, oldValue, newValue) -> {
                 filteredData.setPredicate(tabinfo -> {
                     if (newValue == null || newValue.isEmpty()) {
                         return true;
 
                     }
                     String lowerCaseFilter = newValue.toLowerCase();
-                    if (tabinfo.getName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                        System.out.println("Lower"+lowerCaseFilter);
+                    if (tabinfo.getName().toLowerCase().indexOf(lowerCaseFilter) != -1 ||tabinfo.getSurrname().toLowerCase().indexOf(lowerCaseFilter) != -1) {
                         return true;
                     }
-                    else    if (tabinfo.getSurrname().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                        System.out.println("Lower"+lowerCaseFilter);
-                        return true;
-                    }
-                    else    if (tabinfo.getIdentityNo().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                        System.out.println("Lower"+lowerCaseFilter);
-                        return true;
-                    }
+
+
 
                     return false;
                 });
             });
-            SortedList<NewCheckInDataInTable> sortedData = new SortedList<>(filteredData);
+            SortedList<EntityCheckIn> sortedData = new SortedList<>(filteredData);
             sortedData.comparatorProperty().bind(tabel.comparatorProperty());
             tabel.setItems(sortedData);
         });

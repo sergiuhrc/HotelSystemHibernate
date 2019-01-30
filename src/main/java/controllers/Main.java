@@ -12,7 +12,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/FXMLDocument.fxml"));
         Parent root =loader.load();
-        // root.setStyle("-fx-background-color: transparent;");
+
         Scene scene = new Scene(root);
 
         stage.setScene(scene);

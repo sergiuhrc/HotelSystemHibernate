@@ -1,8 +1,8 @@
 
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¥¡Ëıÿÿÿÿÿ8–Òßı,
-Fsquid:S2115")Add password protection to this database.(Ø×^8ÒñÌßı,
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢—°„8–úÑßı,
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¹“™‚úÿÿÿÿ8Ù¹Òßı,
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¢—°„8–úÑßı,
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¹“™‚úÿÿÿÿ8Ù¹Òßı,
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï¨úòúÿÿÿÿ8µ«ñõ‡-
 ~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥¡Ëıÿÿÿÿÿ8–Òßı,
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ï¨úòúÿÿÿÿ8µ«ñõ‡-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¥¡Ëıÿÿÿÿÿ8µ«ñõ‡-
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¹“™‚úÿÿÿÿ8Ù¹Òßı,
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¹“™‚úÿÿÿÿ8µ«ñõ‡-
+Fsquid:S2115")Add password protection to this database.(Ø×^8ÒñÌßı,
